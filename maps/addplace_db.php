@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,8 +40,13 @@ if (mysqli_query($conn, $sql)) {
     </script>';
 */
     //echo '<meta http-equiv="refresh" content="1;url=admin_list_user.php" />';
-    echo '<script type="text/javascript">sweetAlert("Congratulations !","เพิ่มที่อยู่สำเร็จ","success")</script>' ;
-    
+    echo '<script type="text/javascript">sweetAlert("Congratulations !","เพิ่มที่อยู่สำเร็จ","success")
+    </script>' ;
+    //echo "<script>window.location='index.php'</script>";
+   // echo "<script type='text/javascript'>";
+	//echo "alert('เเก้ไขข้อมูลสำเร็จ');";
+	//echo "window.location = 'findAll.php'; ";
+	//echo "</script>";
 }
 
 mysqli_close($conn);

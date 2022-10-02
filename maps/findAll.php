@@ -43,7 +43,7 @@ echo "<tr>";
   echo "<td>" .$row["lat"] .  "</td> ";
   echo "<td>" .$row["lng"] .  "</td> ";
   //แก้ไขข้อมูล
-  echo "<td><a class='btn btn-warning' href='form-edit.php?id=$row[0]'>เเก้ไข</ิ></td> ";
+  echo "<td><a class='btn btn-info' href='form-edit.php?id=$row[0]'>edit</a></td> ";
   //ลบข้อมูล
   echo "<td><a href='delete_db.php?id=$row[0]' onclick=\"return confirm('คุณต้องการลบข้อมูลนี้ใช่ หรือ ไม่ ?')\" class='btn btn-danger btn-xs'>ลบ</a></td> ";
 echo "</tr>";

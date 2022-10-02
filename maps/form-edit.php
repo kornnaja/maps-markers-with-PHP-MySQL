@@ -30,8 +30,8 @@ extract($row);
       <tr>
         <td align="right" bgcolor="#EBEBEB">ID : </td>
         <td bgcolor="#EBEBEB">
-
-          <input type="text" name="place_id" value="<?php echo $place_id; ?>" size="30" disabled='disabled' />
+  <p><input type="text" name="place_id" value="<?php echo $place_id; ?>" disabled='disabled' />
+<input type="hidden" name="place_id" value="<?php echo $place_id; ?>" />
         </td>
       </tr>
       <tr>
@@ -41,7 +41,7 @@ extract($row);
       <tr>
         <td width="117" align="right" bgcolor="#EBEBEB">ชื่อสถานที่
           :</td>
-        <td bgcolor="#EBEBEB"><input name="place_name" type="text" id="member_lname" value="<?= $name; ?>" size="30" placeholder="ภาษาไทยเท่านั้น" required="required" "/></td>
+        <td bgcolor="#EBEBEB"><input name="place_name" type="text" id="place_name" value="<?= $name; ?>" size="30" placeholder="ภาษาไทยเท่านั้น" required="required" "/></td>
     </tr>
     <tr>
       <td align=" right" bgcolor="#EBEBEB">&nbsp;</td>
@@ -51,7 +51,7 @@ extract($row);
         <td align="right" bgcolor="#EBEBEB">ที่ตั้ง
           <label> :</label>
         </td>
-        <td bgcolor="#EBEBEB"><input name="add_place" type="text" id="member_lname" value="<?= $address; ?>" size="30" placeholder="ภาษาไทยเท่านั้น" required="required" "/></td>
+        <td bgcolor="#EBEBEB"><input name="add_place" type="text" id="add_place" value="<?= $address; ?>" size="30" placeholder="ภาษาไทยเท่านั้น" required="required" "/></td>
     </tr>
     <tr>
       <td align=" right" bgcolor="#EBEBEB">&nbsp;</td>
@@ -59,7 +59,7 @@ extract($row);
       </tr>
       <tr>
         <td align="right" bgcolor="#EBEBEB">ประเภทสถานที่ :</td>
-        <td bgcolor="#EBEBEB"><input type="text" name="type_place" id="username" value="<?= $type; ?>" size="30" placeholder="ตัวเลขหรือภาษาอังกฤษเท่านั้น" required="required" /></td>
+        <td bgcolor="#EBEBEB"><input type="text" name="type_place" id="type_place" value="<?= $type; ?>" size="30" placeholder="ตัวเลขหรือภาษาอังกฤษเท่านั้น" required="required" /></td>
       </tr>
       <tr>
         <td align="right" bgcolor="#EBEBEB">&nbsp;</td>
@@ -69,7 +69,7 @@ extract($row);
         <td align="right" bgcolor="#EBEBEB">ละติจูด :
           <label> </label>
         </td>
-        <td bgcolor="#EBEBEB"><input type="text" name="lat" id="lat" value="<?= $lat; ?>" size="30" placeholder="ตัวเลขหรือภาษาอังกฤษเท่านั้น" required /></td>
+        <td bgcolor="#EBEBEB"><input type="text" name="lat_place" id="lat_place" value="<?= $lat; ?>" size="30" placeholder="ตัวเลขหรือภาษาอังกฤษเท่านั้น" required /></td>
       </tr>
       <tr>
         <td align="right" bgcolor="#EBEBEB">&nbsp;</td>
@@ -77,7 +77,7 @@ extract($row);
       </tr>
       <tr>
         <td align="right" bgcolor="#EBEBEB">ลองติจูด : </td>
-        <td bgcolor="#EBEBEB"><input name="lng" type="text" id="lng" value="<?= $lng; ?>" size="30" placeholder="ตัวอย่าง pisit.bow@gmail.com" required="required" /></td>
+        <td bgcolor="#EBEBEB"><input name="lng_place" type="text" id="lng_place" value="<?= $lng; ?>" size="30" placeholder="ตัวอย่าง pisit.bow@gmail.com" required="required" /></td>
       </tr>
       <tr>
         <td bgcolor="#EBEBEB">&nbsp;</td>
@@ -88,7 +88,7 @@ extract($row);
         <td bgcolor="#EBEBEB">&nbsp;
           <input class="btn btn-danger" type="button" value=" ยกเลิก " onclick="window.location='findAll.php' " /> <!-- ถ้าไม่แก้ไขให้กลับไปหน้าแสดงรายการ -->
           &nbsp;
-          <input class="btn btn-primary" type="submit" name="Update" id="Update" value="บันทึก" />
+          <input class="btn btn-primary"type="submit" name="Update" id="Update" value="บันทึก" />
         </td>
       </tr>
    
